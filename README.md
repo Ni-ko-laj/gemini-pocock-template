@@ -23,7 +23,7 @@ This is a port of [Matt Pocock's "Skills" framework](https://github.com/mattpoco
 
 1.  **Clone the template**:
     ```bash
-    git clone <your-repo-url> my-new-project
+    git clone https://github.com/Ni-ko-laj/gemini-pocock-template.git my-new-project
     cd my-new-project
     ```
 2.  **Bootstrap**:
