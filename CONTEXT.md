@@ -1,14 +1,19 @@
-# Context: Gemini-Pocock Skills
+# Context: Gemini-Pocock Template
 
-This document defines the ubiquitous language for the Gemini-native implementation of Matt Pocock's skills framework.
+This document defines the ubiquitous language for the Gemini-Pocock skills framework.
 
-## Key Terms
+## Core Concepts
 
-- **ASH (Active Software Head)**: The specific, narrow task or vertical slice currently being worked on by the agent.
-- **Grilling**: A Socratic interview process where the agent interrogates the user to harden a design before implementation.
-- **Tracer Bullet**: A thin vertical slice of functionality that cuts through all layers of the system (DB, API, UI) to prove a path.
-- **Skill**: A modular instruction set (`SKILL.md`) that the agent can "activate" to gain specialized capabilities.
-- **Source Skill**: The version-controlled source of a skill in `source-skills/`.
-- **Native Skill**: A symlink in `.gemini/skills/` discovered by the Gemini CLI.
-- **Sync-Link**: The process of flattening the nested `source-skills/` into the flat `.gemini/skills/` tier.
-- **Local Markdown Tracker**: Using `.scratch/` files to manage tasks instead of an external issue tracker.
+- **ASH (Active Software Head)**: The specific, narrow task or vertical slice currently being worked on. It is tracked in the generated `PRD.md` and `.scratch/` issues.
+- **The Engine**: The `scripts/sync-skills.cjs` Node.js script that flattens nested source skills into the native Gemini discovery tier.
+- **Discovery Tier**: The `.gemini/skills/` directory where the Gemini CLI automatically looks for skill instructions.
+- **Source of Truth**: The `source-skills/` directory, containing the version-controlled, categorized skill folders.
+- **Grilling**: The Socratic process of alignment before execution, typically resulting in a PRD.
+- **Tracer Bullets**: Vertical slices of functionality that are independently verifiable and shippable.
+- **Local Markdown Tracker**: The practice of using `.scratch/` for issue tracking to ensure project portability and offline capability.
+
+## Architectural Conventions
+
+- **Native Discovery**: We prioritize the Gemini CLI's built-in discovery mechanism over manual instruction-reading.
+- **Automated Meta-Skills**: Skills like `/write-a-skill` are enhanced with agentic automation to handle file system operations.
+- **Relative Portability**: All scripts and configuration files must use relative paths to ensure the repository works immediately after cloning and bootstrapping.

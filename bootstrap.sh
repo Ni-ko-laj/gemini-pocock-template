@@ -6,7 +6,7 @@
 echo "🚀 Initializing Gemini-Pocock Skills..."
 
 # 1. Ensure directories exist
-mkdir -p .gemini/skills source-skills .scratch docs/agents docs/prd docs/issues
+mkdir -p .gemini/skills source-skills .scratch docs/agents docs/prd docs/issues docs/adr
 
 # 2. Run the sync script to create symlinks
 if [ -f "scripts/sync-skills.cjs" ]; then
