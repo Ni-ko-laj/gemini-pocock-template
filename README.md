@@ -55,4 +55,4 @@ To add a new skill:
 4. (Or just use the `/write-a-skill` meta-skill!)
 
 ---
-*Inspired by Matt Pocock. Ported to Gemini CLI by dj_im.*
+*Inspired by Matt Pocock. Ported to Gemini CLI by Ni-ko-laj.*
