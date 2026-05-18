@@ -36,6 +36,13 @@ This is a port of [Matt Pocock's "Skills" framework](https://github.com/mattpoco
 3.  **Start Coding**:
     Launch the Gemini CLI. The skills will be automatically listed in your `<available_skills>` prompt.
 
+4.  **Initial Setup**:
+    Before using engineering skills like `/tdd` or `/to-prd`, you **must** run the setup skill:
+    ```
+    /setup-matt-pocock-skills
+    ```
+    This will interview you about your issue tracker (GitHub or Local Markdown) and triage labels, and then generate the necessary metadata in `docs/agents/`.
+
 ## 🧙 Available Skills
 
 - `/grill-me`: Relentless Socratic interrogation of your plans.
