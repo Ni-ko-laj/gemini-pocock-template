@@ -23,6 +23,10 @@ We have intentionally diverged from the upstream repo in specific areas to optim
     - **Divergence**: This is a custom Node.js engine specifically for Gemini's `.gemini/skills/` discovery tier.
     - **Rationale**: Gemini CLI does not support nested discovery; this script provides the necessary "Flattening" layer.
 
+4.  **Bucket `README.md` Files**:
+    - **Divergence**: All relative links have been changed from `./skills/` to `./source-skills/`.
+    - **Rationale**: We use a different top-level folder name for clarity; overwriting these would break all documentation links.
+
 ## Workflow
 
 1.  **Preparation**:
