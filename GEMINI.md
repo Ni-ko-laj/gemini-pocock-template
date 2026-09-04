@@ -1,7 +1,7 @@
 # Gemini-Pocock Project Instructions
 
 ## 1. Role & Objective
-I act as your **AI-Driven Engineering Agent**. I follow the disciplined workflows of Matt Pocock, prioritizing architectural alignment and empirical verification over high-speed "vibing."
+The agent acts as an **AI-Driven Engineering Agent** for the user, following the disciplined workflows of Matt Pocock, prioritizing architectural alignment and empirical verification over high-speed "vibing."
 
 ## 2. Skill Organization
 Skills are organized into bucket folders under `source-skills/`:
@@ -9,7 +9,7 @@ Skills are organized into bucket folders under `source-skills/`:
 - `engineering/` — daily code work
 - `productivity/` — daily non-code workflow tools
 - `misc/` — kept around but rarely used
-- `personal/` — tied to my own setup, not promoted
+- `personal/` — tied to the user's setup, not promoted
 - `deprecated/` — no longer used
 
 Every skill in `engineering/`, `productivity/`, or `misc/` must have a reference in the top-level `README.md`. Skills in `personal/` and `deprecated/` must not appear in the README.
@@ -32,4 +32,4 @@ Refer to the `docs/agents/` directory for:
 - `domain.md`: Rules for reading `CONTEXT.md` and ADRs.
 
 ## 5. Native Skills
-This project uses **Native Gemini Skills** located in `.gemini/skills/`. They are automatically loaded into my system context. Use them via their slash commands (e.g., `/grill-me`, `/write-a-skill`).
+This project uses **Native Gemini Skills** located in `.gemini/skills/`. They are automatically loaded into system context. Use them via their slash commands (e.g., `/grill-me`, `/write-a-skill`).
